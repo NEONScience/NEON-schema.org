@@ -1,0 +1,175 @@
+{
+    "@context": {
+        "@vocab": "https://schema.org",
+        "datacite": "http://purl.org/spar/datacite/",
+        "sweet-rel": "http://sweetontology.net/rela/",
+        "sweet-kd": "http://sweetontology.net/humanKnowledgeDomain/",
+        "edam": "http://edamontology.org/"
+    },
+    "@type": [
+        "Service",
+        "ResearchProject"
+    ],
+    "legalName": "National Ecological Observatory Network",
+    "name": "NEON",
+    "url": "https://www.neonscience.org",
+    "description": "The National Ecological Observatory Network, sponsored by the National Science Foundation and operated by Battelle, is designed to collect and provide open data that characterize and quantify complex, rapidly changing ecological processes across the US. The comprehensive data, spatial extent and remote sensing technology provided by NEON will enable a large and diverse user community to tackle new questions at scales not accessible to previous generations of ecologists.",
+    "sameAs": [
+        "https://data.neonscience.org",
+        "https://www.re3data.org/repository/r3d100010290",
+        "https://twitter.com/NEON_sci",
+        "https://www.linkedin.com/company/neon-science/",
+        "https://www.facebook.com/NEONScienceData/"
+    ],
+    "sweet-rel:hasRealm": [
+        {
+            "@id": "sweet-kd:Ecology"
+        },
+        {
+            "@id": "sweet-kd:Genetics"
+        },
+        {
+            "@id": "sweet-kd:Phenology"
+        },
+        {
+            "@id": "sweet-kd:Science"
+        },
+        {
+            "@id": "sweet-kd:AtmosphericScience"
+        },
+        {
+            "@id": "sweet-kd:Biogeochemistry"
+        },
+        {
+            "@id": "sweet-kd:Biology"
+        },
+        {
+            "@id": "sweet-kd:Geochemistry"
+        },
+        {
+            "@id": "sweet-kd:LandscapeEcology"
+        },
+        {
+            "@id": "sweet-kd:Limnology"
+        },
+        {
+            "@id": "sweet-kd:Ecology"
+        }
+    ],
+    "category": [],
+    "provider": {
+        "@id": "https://www.neonscience.org"
+    },
+    "logo": {
+        "@type": "ImageObject",
+        "url": "https://data.neonscience.org/neon-data-theme/images/logo.png?v5.13.3"
+    },
+    "identifier": {
+        "@type": "PropertyValue",
+        "name": "Re3data DOI for this repository",
+        "propertyID": "http://purl.org/spar/datacite/doi",
+        "value": "10.17616/R36G6R",
+        "url": "https://doi.org/10.17616/R36G6R"
+    },
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "name": "Contact Us",
+        "url": "https://www.neonscience.org/about/contact-us",
+        "contactType": "customer support"
+    },
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1685 38th St. Suite 100",
+        "addressLocality": "Boulder",
+        "addressRegion": "CO",
+        "postalCode": "80301",
+        "addressCountry": "USA"
+    },
+    "funder": {
+        "@type": "Organization",
+        "@id": "https://doi.org/10.13039/100000153",
+        "legalName": "Division of Biological Infrastructure",
+        "alternateName": "DBI",
+        "url": "https://www.nsf.gov/div/index.jsp?div=DBI",
+        "identifier": {
+            "@type": [
+                "PropertyValue",
+                "datacite:ResourceIdentifier"
+            ],
+            "propertyID": "DBI",
+            "value": "10.13039/100000153",
+            "url": "https://doi.org/10.13039/100000153"
+        },
+        "parentOrganization": {
+            "@type": "Organization",
+            "@id": "http://dx.doi.org/10.13039/100000001",
+            "legalName": "Directorate For Biological Sciences",
+            "alternateName": "BIO",
+            "url": "http://www.nsf.gov",
+            "parentOrganization": {
+                "@type": "Organization",
+                "@id": "http://dx.doi.org/10.13039/100000001",
+                "legalName": "National Science Foundation",
+                "alternateName": "NSF",
+                "url": "http://www.nsf.gov",
+                "identifier": {
+                    "@type": [
+                        "PropertyValue",
+                        "datacite:ResourceIdentifier"
+                    ],
+                    "propertyID": "DOI",
+                    "value": "10.13039/100000001",
+                    "url": "https://doi.org/10.13039/100000001"
+                }
+            }
+        }
+    },
+    "parentOrganization": {
+        "@type": "Organization",
+        "@id": "https://www.battelle.org",
+        "legalName": "Battelle Memorial Institute",
+        "name": "Battelle",
+        "url": "https://www.battelle.org"
+    },
+    "availableChannel": [
+        {
+            "@type": "ServiceChannel",
+            "serviceURL": "https://data.neonscience.org/data-api",
+            "providesService": {
+                "@type": "Service",
+                "name": "NEON API",
+                "description": "Search and download information about data products, locations, sites, data, samples, and taxonomic lists. Data is also available for download.",
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": "https://data.neonscience.org/api/v0/products/"
+                }
+            }
+        }
+    ],
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Data Catalogs",
+        "itemListElement": [
+            {
+                "@type": "DataCatalog",
+                "@id": "https://data.neonscience.org/data-products",
+                "name": "Data Products",
+                "audience": {
+                    "@type": "Audience",
+                    "audienceType": "public",
+                    "name": "General Public"
+                }
+            },
+            {
+                "@type": "DataCatalog",
+                "@id": "https://data.neonscience.org/prototype-search",
+                "name": "Prototype Data",
+                "audience": {
+                    "@type": "Audience",
+                    "audienceType": "public",
+                    "name": "General Public"
+                }
+            }
+        ]
+    }
+}
