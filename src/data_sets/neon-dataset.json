@@ -1,0 +1,43 @@
+{
+    "@context": {
+        "@vocab": "https://schema.org",
+        "dbpedia": "http://dbpedia.org/resource/"
+    },
+    "@type": "Dataset",
+    "name": [productName],
+    "description": [productDescription],
+    "url": "https://data.neonscience.org/data-products/"[productCode],
+    "version": "provisional",
+    "isAccessibleForFree": true,
+    "keywords": [keywords],
+    "license": "https://www.neonscience.org/data/about-data/data-policies",
+    "identifier": "https://data.neonscience.org/data-products/"[productCode],
+    "citation": [],
+    "variablesMeasured": [],
+    "includedInDataCatalog": {
+        "@id": "https://data.neonscience.org/data-products/explore",
+        "@type": "DataCatalog"
+    },
+    "temporalCoverage": [min(availableMonths)]"/"[max(availableMonths)],
+    "spatialCoverage": {
+        "@type": "Place",
+        "name": [siteCode],
+        "description": [locationDescription],
+        "@geo": {
+            "@type": "GeoCoordinates",
+            "latitude": [locationDecimalLatitude],
+            "longitude": [locationDecimalLongitude],
+            "elevation": [locationElevation]
+        },...
+        "additionalProperty": {
+           "@type": ["PropertyValue", "dbpedia:Spatial_reference_system"],
+            "@id": "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+        }
+    },
+    "provider": {
+        "@id": "https://data.neonscience.org"
+    },
+    "publisher": {
+        "@id": "https://data.neonscience.org"
+    }
+}
